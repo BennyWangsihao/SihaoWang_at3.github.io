@@ -1,20 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Scrollscape</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <div class="progress">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
 
-<header></header>
-<nav class="navbar">
-      <a href="#intro">Introduction</a>
-      <a href="#1">Week 2</a>
+  <main>
+    <section class="section hero" data-mood="start">
+      <div class="content">
+        <p class="tag">Scroll Interaction Prototype</p>
+        <h1>Scrollscape</h1>
+        <p>
+          A simple scroll-based prototype. Scroll down to move through different calm moods.
+        </p>
+        <p class="hint">Scroll ↓</p>
+      </div>
+    </section>
 
-<section id="1" class="card">   
-</section>
-<p>Image</p>
-<footer>
+    <section class="section" data-mood="morning">
+      <div class="card">
+        <p class="number">01</p>
+        <h2>Morning Focus</h2>
+        <p>
+          This section uses a warmer background to create a soft study mood.
+          The content appears when the user scrolls into this part of the page.
+        </p>
+      </div>
+    </section>
 
+    <section class="section" data-mood="rain">
+      <div class="card">
+        <p class="number">02</p>
+        <h2>Rain Pause</h2>
+        <p>
+          This section uses cooler colours to create a quiet pause.
+          The scroll action slowly changes the feeling of the page.
+        </p>
+      </div>
+    </section>
 
+    <section class="section" data-mood="night">
+      <div class="card">
+        <p class="number">03</p>
+        <h2>Night Drift</h2>
+        <p>
+          This final section becomes darker and calmer.
+          It gives the scroll journey a slow ending.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" data-mood="end">
+      <div class="card">
+        <h2>Prototype Concept</h2>
+        <p>
+          Scrollscape uses scroll as the main browser interaction. The user does not
+          click buttons or move between pages. Instead, they scroll through different
+          visual moods. The background, progress bar and text animation all respond
+          to the user’s scroll position.
+        </p>
+
+        <h2>Sources</h2>
+        <p>
+          No external images, audio, fonts or JavaScript libraries are used.
+          All visual elements are made with HTML, CSS and JavaScript.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
-</html
+</html>
